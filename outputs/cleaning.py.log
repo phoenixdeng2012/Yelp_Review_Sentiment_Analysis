@@ -1,0 +1,28 @@
+              business_id           ...                           user_id
+0  iCQpiavjjPzJ5_3gPD5Ebg           ...            msQe1u7Z_XuqjGoqhB0J5g
+1  pomGBqfbxcqPv14c3XH-ZQ           ...            msQe1u7Z_XuqjGoqhB0J5g
+2  jtQARsP6P-LbkyjbO1qNGg           ...            msQe1u7Z_XuqjGoqhB0J5g
+3  elqbBhBfElMNSrjFqW3now           ...            msQe1u7Z_XuqjGoqhB0J5g
+4  Ums3gaP2qM3W1XcA5r6SsQ           ...            msQe1u7Z_XuqjGoqhB0J5g
+
+[5 rows x 9 columns]
+some examples of reviews
+The pizza was okay. Not the best I've had. I prefer Biaggio's on Flamingo / Fort Apache. The chef there can make a MUCH better NY style pizza. The pizzeria @ Cosmo was over priced for the quality and lack of personality in the food. Biaggio's is a much better pick if youre going for italian - family owned, home made recipes, people that actually CARE if you like their food. You dont get that at a pizzeria in a casino. I dont care what you say...
+
+
+I have been an Emerald Club member for a number of years.  I have always been very satisfied with their vehicles and customer service.  This recent visit to Pittsburgh was no exception.
+start cleaning
+[nltk_data] Downloading package stopwords to
+[nltk_data]     /home/phoenix/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+got nanny
+  ...
+0 ...
+1 ...
+2 ...
+3 ...
+4 ...
+
+[5 rows x 11 columns]
+sentence length analysis
+done cleaning
