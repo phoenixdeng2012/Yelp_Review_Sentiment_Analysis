@@ -1,1 +1,83 @@
-python: can't open file 'LSTMx1x6.py': [Errno 2] No such file or directory
+2019-02-04 22:32:41.836482: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2019-02-04 22:32:42.053660: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1405] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:02:00.0
+totalMemory: 10.92GiB freeMemory: 1.17GiB
+2019-02-04 22:32:42.202156: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1405] Found device 1 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.19
+pciBusID: 0000:01:00.0
+totalMemory: 5.94GiB freeMemory: 5.83GiB
+2019-02-04 22:32:42.202205: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0, 1
+2019-02-04 22:32:43.283095: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-02-04 22:32:43.283132: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 1 
+2019-02-04 22:32:43.283139: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N N 
+2019-02-04 22:32:43.283142: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 1:   N N 
+2019-02-04 22:32:43.283401: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 911 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:02:00.0, compute capability: 6.1)
+2019-02-04 22:32:43.288642: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 5607 MB memory) -> physical GPU (device: 1, name: GeForce GTX 980 Ti, pci bus id: 0000:01:00.0, compute capability: 5.2)
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_1 (InputLayer)         (None, 60)                0         
+_________________________________________________________________
+embedding_1 (Embedding)      (None, 60, 50)            20000050  
+_________________________________________________________________
+lstm_1 (LSTM)                (None, 6)                 1368      
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 6)                 0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 1)                 7         
+_________________________________________________________________
+activation_1 (Activation)    (None, 1)                 0         
+=================================================================
+Total params: 20,001,425
+Trainable params: 1,375
+Non-trainable params: 20,000,050
+_________________________________________________________________
+(223982, 60)
+Train on 156787 samples, validate on 67195 samples
+Epoch 1/20
+ - 1866s - loss: 0.5053 - acc: 0.7605 - val_loss: 0.3488 - val_acc: 0.8541
+Epoch 2/20
+ - 1861s - loss: 0.3564 - acc: 0.8547 - val_loss: 0.3004 - val_acc: 0.8749
+Epoch 3/20
+ - 1575s - loss: 0.3274 - acc: 0.8680 - val_loss: 0.2789 - val_acc: 0.8859
+Epoch 4/20
+ - 1840s - loss: 0.3139 - acc: 0.8738 - val_loss: 0.2817 - val_acc: 0.8822
+Epoch 5/20
+ - 1844s - loss: 0.3047 - acc: 0.8790 - val_loss: 0.2605 - val_acc: 0.8940
+Epoch 6/20
+ - 1832s - loss: 0.2988 - acc: 0.8811 - val_loss: 0.2605 - val_acc: 0.8937
+Epoch 7/20
+ - 1542s - loss: 0.2941 - acc: 0.8823 - val_loss: 0.2633 - val_acc: 0.8892
+Epoch 8/20
+ - 1848s - loss: 0.2913 - acc: 0.8848 - val_loss: 0.2607 - val_acc: 0.8923
+Epoch 9/20
+ - 1865s - loss: 0.2874 - acc: 0.8863 - val_loss: 0.2503 - val_acc: 0.8974
+Epoch 10/20
+ - 1855s - loss: 0.2849 - acc: 0.8869 - val_loss: 0.2653 - val_acc: 0.8911
+Epoch 11/20
+ - 1516s - loss: 0.2832 - acc: 0.8875 - val_loss: 0.2648 - val_acc: 0.8866
+Epoch 12/20
+ - 1835s - loss: 0.2829 - acc: 0.8883 - val_loss: 0.2471 - val_acc: 0.8988
+Epoch 13/20
+ - 1837s - loss: 0.2822 - acc: 0.8883 - val_loss: 0.2480 - val_acc: 0.8972
+Epoch 14/20
+ - 1826s - loss: 0.2789 - acc: 0.8899 - val_loss: 0.2473 - val_acc: 0.9003
+Epoch 15/20
+ - 1721s - loss: 0.2781 - acc: 0.8895 - val_loss: 0.2431 - val_acc: 0.9003
+Epoch 16/20
+ - 1626s - loss: 0.2788 - acc: 0.8887 - val_loss: 0.2443 - val_acc: 0.9009
+Epoch 17/20
+ - 1821s - loss: 0.2764 - acc: 0.8909 - val_loss: 0.2525 - val_acc: 0.8976
+Epoch 18/20
+ - 1832s - loss: 0.2757 - acc: 0.8905 - val_loss: 0.2423 - val_acc: 0.9028
+Epoch 19/20
+ - 1843s - loss: 0.2760 - acc: 0.8905 - val_loss: 0.2423 - val_acc: 0.9014
+Epoch 20/20
+ - 1530s - loss: 0.2754 - acc: 0.8913 - val_loss: 0.2398 - val_acc: 0.9021
+/home/phoenix/miniconda3/envs/gpu/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Using TensorFlow backend.
+
+Test accuracy =  0.902618044154526
+plot training loss
