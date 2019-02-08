@@ -41,3 +41,43 @@ Epoch 2/20
  - 1885s - loss: 0.2714 - acc: 0.8898 - val_loss: 0.2405 - val_acc: 0.9023
 Epoch 3/20
  - 1874s - loss: 0.2488 - acc: 0.9002 - val_loss: 0.2343 - val_acc: 0.9069
+Epoch 4/20
+ - 1598s - loss: 0.2361 - acc: 0.9055 - val_loss: 0.2392 - val_acc: 0.9061
+Epoch 5/20
+ - 1864s - loss: 0.2273 - acc: 0.9094 - val_loss: 0.2284 - val_acc: 0.9051
+Epoch 6/20
+ - 1864s - loss: 0.2205 - acc: 0.9129 - val_loss: 0.2098 - val_acc: 0.9145
+Epoch 7/20
+ - 1886s - loss: 0.2151 - acc: 0.9143 - val_loss: 0.2126 - val_acc: 0.9130
+Epoch 8/20
+ - 1557s - loss: 0.2109 - acc: 0.9165 - val_loss: 0.2111 - val_acc: 0.9161
+Epoch 9/20
+ - 1872s - loss: 0.2072 - acc: 0.9179 - val_loss: 0.2167 - val_acc: 0.9124
+Epoch 10/20
+ - 1872s - loss: 0.2030 - acc: 0.9199 - val_loss: 0.2053 - val_acc: 0.9172
+Epoch 11/20
+ - 1856s - loss: 0.2008 - acc: 0.9210 - val_loss: 0.2114 - val_acc: 0.9150
+Epoch 12/20
+ - 1547s - loss: 0.1977 - acc: 0.9219 - val_loss: 0.2006 - val_acc: 0.9183
+Epoch 13/20
+ - 1876s - loss: 0.1941 - acc: 0.9233 - val_loss: 0.1997 - val_acc: 0.9188
+Epoch 14/20
+ - 1881s - loss: 0.1924 - acc: 0.9246 - val_loss: 0.2050 - val_acc: 0.9167
+Epoch 15/20
+ - 1841s - loss: 0.1918 - acc: 0.9245 - val_loss: 0.2001 - val_acc: 0.9198
+Epoch 16/20
+ - 1569s - loss: 0.1890 - acc: 0.9253 - val_loss: 0.1984 - val_acc: 0.9200
+Epoch 17/20
+ - 1896s - loss: 0.1868 - acc: 0.9262 - val_loss: 0.1979 - val_acc: 0.9201
+Epoch 18/20
+ - 1878s - loss: 0.1856 - acc: 0.9270 - val_loss: 0.1983 - val_acc: 0.9205
+Epoch 19/20
+ - 1868s - loss: 0.1843 - acc: 0.9277 - val_loss: 0.2013 - val_acc: 0.9203
+Epoch 20/20
+ - 1574s - loss: 0.1832 - acc: 0.9282 - val_loss: 0.2231 - val_acc: 0.9158
+/home/phoenix/miniconda3/envs/gpu/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Using TensorFlow backend.
+
+Test accuracy =  0.9157439817002062
+plot training loss
