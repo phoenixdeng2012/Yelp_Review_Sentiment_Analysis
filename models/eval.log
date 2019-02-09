@@ -1,0 +1,89 @@
+Loaded model from disk
+(223982, 60)
+
+Test accuracy =  0.9186727623273938
+Test loss =  0.20428653601861713
+example 
+
+sentiment true/predict :  1 [0.]
+Hi, It's a Long one! I brought my 25 yr. old car that I cherish to Danny's car wash to get the works. Oil change, and full Detail done. The first salesman I came upon was nice enough, as he was gouging me for every dollar he could get from me. He bulldozed right over me! I told him I really wanted it to be perfect as I Love my car. He quoted me $750! I balked at that and said I wouldn't pay over $400. (Mind you, I have a 2 dr. Little car!) Then another specialist-oil this time-came over and Told Me that with the age and rollover of the miles on my car, that I'd need synthetic oil change. Which is $50 more, and you can Never go back to basic oil again. I told him, that those are Original miles, Hasn't rolled over. He said, No, probably rolled over a couple times. THEY ARE ORIGINAL MILES. BUT, he didn't listen... they told me it would be done by 4:00pm-5 hrs later. (I had to pick my son up from school, so it Had to be done.) I came back at 4:00, not done til 5:00. Price was still $400, but vents, & windows not cleaned, upholstery not vacuumed or shampooed in back, my chrome rims were black, not even touched. And, overall sucky! I came home and cried, and cleaned my whole car myself. I was worried my partner was going to be mad that I spent so much money, and nothing was done, but a basic car wash, and Wrong oil change!...She was... So, the reason for the 4 star rating, is because she wrote a letter to the owner.(would've given them 5 star if not for the 1st visit!) Apparently, under New ownership now-Not Danny's Family, Now "Jackson's." The manager called us and asked us to please bring it back, and give them another chance. We did. We left my car with them all day, but it was worth it. One of the managers talked us through Everything, he and 2 other managers had been versed on my car. Top to bottom. They did such a Pristine job, and really made us feel special. He said, "Thank you for letting us gain your trust in us." They went Above and Beyond. My car may be old, (with 88,000 Orig. Miles, Thank you!) but it has Always been taken care of, and protected from the elements. My car looks and feels fantastic now! I printed a retraction from my 1st experience with them, on FB even. They deserved it. Truly. Thank You Jackson's!!! We Will be back.
+after clean 
+
+hi long one brought 25 yr old car cherish danny's car wash get works oil change full detail done first salesman came upon nice enough gouging every dollar could get bulldozed right told really wanted perfect love car quoted 750 balked said would pay 400 mind 2 dr little car another specialistoil timecame told age rollover miles car would need synthetic oil change 50 never go back basic oil told original miles rolled said probably rolled couple times original miles listen told would done 400pm5 hrs later pick son school done came back 400 done til 500 price still 400 vents windows cleaned upholstery vacuumed shampooed back chrome rims black even touched overall sucky came home cried cleaned whole car worried partner going mad spent much money nothing done basic car wash wrong oil changeshe reason 4 star rating wrote letter ownerwould given 5 star 1st visit apparently new ownership nownot danny's family jackson's manager called us asked us please bring back give another chance left car day worth one managers talked us everything 2 managers versed car top bottom pristine job really made us feel special said thank letting us gain trust us went beyond car may old 88000 orig miles thank always taken care protected elements car looks feels fantastic printed retraction 1st experience fb even deserved truly thank jackson's back
+example 
+
+sentiment true/predict :  1 [0.]
+My 70 year old mother was getting her very first mammogram, and we first got a referral to get it done at Simon med but after seeing all their awful reviews I decided to look elsewhere and boy am I glad I found Ma'am exams.
+They were able to get us an appointment the next day and when we got there there was virtually no wait (sign of an efficiently run office). They have a beautiful and clean office and the staff was friendly and pleasant. The actual test took less than 15 min and there was absolutely no hassle.
+We paid out of pocket and their price was even a couple of dollars cheaper than simon med!
+I VERY MUCH HIGHLY recommend their services.
+after clean 
+
+70 year old mother getting first mammogram first got referral get done simon med seeing awful reviews decided look elsewhere boy glad found madam examsthey able get us appointment next day got virtually wait sign efficiently run office beautiful clean office staff friendly pleasant actual test took less 15 min absolutely hasslewe paid pocket price even couple dollars cheaper simon medi much highly recommend services
+example 
+
+sentiment true/predict :  0 [1.]
+Came in for my chronic knee problem.
+Got evaluated.
+Dr. Todd Winton took enough time to patiently listen to me & see my condition.
+
+But I didn't really get confidence in his understanding of the condition.
+A couple of the pathological/evaluation terms he used were not right (I verified that on the internet afterwards).
+
+Can't comment on the treatment as i didn't undertake it.
+after clean 
+
+came chronic knee problemgot evaluateddr todd winton took enough time patiently listen see conditionbut really get confidence understanding conditiona couple pathologicalevaluation terms used right verified internet afterwardscannot comment treatment undertake
+example 
+
+sentiment true/predict :  0 [1.]
+George Brazil/Mike Diamond was a total rip off!  My air conditioner was not working correctly and I called them, when they got here they looked around then determined that I had 3 options the cheapest being $560 and the most $8,000.  They said that I needed a new air conditioner because they could not figure out what was wrong with mine.  The next day I was talking to a friend and she said her husband could come over and look at it, well lo and behold he fixed it and for free and no parts needed!!!! So all they really cared about was selling us an conditioner, they basically made a service call in to a hard sell call.  They did offer me a refund after I wrote a complaint.
+after clean 
+
+george brazilmike diamond total rip air conditioner working correctly called got looked around determined 3 options cheapest 560 8000 said needed new air conditioner could figure wrong mine next day talking friend said husband could come look well lo behold fixed free parts needed really cared selling us conditioner basically made service call hard sell call offer refund wrote complaint
+example 
+
+sentiment true/predict :  1 [0.]
+Two words: CHICHARRON EMPANADAS
+
+Your'e welcome. I would drive here again (it is really out of my way) just for those. And they weren't even on the menu. The nice woman in the kitchen overheard what I wanted to order and she totally made them as a special order!! I will be back!
+after clean 
+
+two words chicharron empanadasyour'e welcome would drive really way even menu nice woman kitchen overheard wanted order totally made special order back
+example 
+
+sentiment true/predict :  0 [1.]
+They have a website and a menu as well, kudos! Prices? NO? Duh?
+after clean 
+
+website menu well kudos prices duh
+example 
+
+sentiment true/predict :  0 [1.]
+Good bargain, yes. But as a family restaurant, this place could be a bit cleaner. I was embarrassed that my kid had to see the restrooms the way they were kept. There were plenty of kids around. They should take some time to remove all the grafitti in the restrooms. As far as the food, it was better than expected. As i read the other reviews, i was expecting much less. If the restrooms were kept clean i would have given them 4 stars.
+after clean 
+
+good bargain yes family restaurant place could bit cleaner embarrassed kid see restrooms way kept plenty kids around take time remove grafitti restrooms far food better expected read reviews expecting much less restrooms kept clean would given 4 stars
+example 
+
+sentiment true/predict :  1 [0.]
+I shredded a tire on the freeway and had to put my spare on. I called discount tire the next day and they said they would get back to me, needless to say they never called me back. I called Goodyear tire on Litchfield and talked with David the service manager. He told me they didn't have my tire in stock but he made a few calls and was able to get the 2 tires I needed for the front within a couple hours. Also during the tire exchange David pointed out that the inside tread on my rear tires was worn indicating out of alignment or negative camber. I didn't have the money to do it then so I waited a week till I got paid and immediately called David back to order the other 2 tires for the rear and schedule an alignment. I dropped the car off after the tires arrived and David was there to greet me . He gave me a time frame of about an hour and a half so I returned within the allotted timeframe. David let me know after they replaced the rear tires that the camber in the back was no longer negative and I wouldn't need an alignment which was great !! Because I was looking to spend right around $400.00 for the package and instead walked out with only having to pay $200.00. I highly recommend coming to this service facility as they don't try to sell you things you don't need,are a very helpful and knowledgeable staff, they were quick and thorough with their work and the prices are fair. Go see David at Goodyear tires on Litchfield and western Ave if you ever have any issues with your vehicle.
+after clean 
+
+shredded tire freeway put spare called discount tire next day said would get back needless say never called back called goodyear tire litchfield talked david service manager told tire stock made calls able get 2 tires needed front within couple hours also tire exchange david pointed inside tread rear tires worn indicating alignment negative camber money waited week till got paid immediately called david back order 2 tires rear schedule alignment dropped car tires arrived david greet gave time frame hour half returned within allotted timeframe david let know replaced rear tires camber back longer negative would need alignment great looking spend right around 40000 package instead walked pay 20000 highly recommend coming service facility try sell things needare helpful knowledgeable staff quick thorough work prices fair go see david goodyear tires litchfield western ave ever issues vehicle
+example 
+
+sentiment true/predict :  0 [1.]
+Mike glover was a great salesman, with that said everyone else there is terrible. The "Manager" has anger issues and has no problem yelling at you and seems to enjoy confrontation. The "finance guy" has no idea what is going on and struggled with the simplest questions, and was not sure how to do his job. If purchasing a used car make sure they let you take it to a mechanic because they leave many issues hidden and hope for the best that you don't find them. 
+
+The only reason that i am giving them two stars is because of Mike, he alone deserves five stars.
+after clean 
+
+mike glover great salesman said everyone else terrible manager anger issues problem yelling seems enjoy confrontation finance guy idea going struggled simplest questions sure job purchasing used car make sure let take mechanic leave many issues hidden hope best find reason giving two stars mike alone deserves five stars
+example 
+
+sentiment true/predict :  1 [0.]
+Fat burger is hands down the best fast food burger I have ever eaten.  The quality of beef paired with the perfect combination of condiments makes fat burger a necessity on every Vegas trip.  I suggest at least a double burger with cheese, bacon, and a fried egg.  It's my belief that lettuce has no business on a burger but get it with everything else.  If you follow these instructions and are disappointed you may want to set yourself an appointment with a psychiatrist you just might be crazy.
+after clean 
+
+fat burger hands best fast food burger ever eaten quality beef paired perfect combination condiments makes fat burger necessity every vegas trip suggest least double burger cheese bacon fried egg belief lettuce business burger get everything else follow instructions disappointed may want set appointment psychiatrist might crazy
