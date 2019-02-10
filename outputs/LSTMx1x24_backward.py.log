@@ -1,0 +1,179 @@
+2019-02-09 17:53:05.217030: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2019-02-09 17:53:05.400127: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1405] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:02:00.0
+totalMemory: 10.92GiB freeMemory: 1.19GiB
+2019-02-09 17:53:05.531503: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1405] Found device 1 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.19
+pciBusID: 0000:01:00.0
+totalMemory: 5.94GiB freeMemory: 5.83GiB
+2019-02-09 17:53:05.531550: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0, 1
+2019-02-09 17:53:06.028019: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-02-09 17:53:06.028050: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 1 
+2019-02-09 17:53:06.028056: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N N 
+2019-02-09 17:53:06.028059: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 1:   N N 
+2019-02-09 17:53:06.028314: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 929 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:02:00.0, compute capability: 6.1)
+2019-02-09 17:53:06.033589: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 5607 MB memory) -> physical GPU (device: 1, name: GeForce GTX 980 Ti, pci bus id: 0000:01:00.0, compute capability: 5.2)
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_1 (InputLayer)         (None, 60)                0         
+_________________________________________________________________
+embedding_1 (Embedding)      (None, 60, 50)            20000050  
+_________________________________________________________________
+lstm_1 (LSTM)                (None, 24)                7200      
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 24)                0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 1)                 25        
+_________________________________________________________________
+activation_1 (Activation)    (None, 1)                 0         
+=================================================================
+Total params: 20,007,275
+Trainable params: 7,225
+Non-trainable params: 20,000,050
+_________________________________________________________________
+(223982, 60)
+Train on 156787 samples, validate on 67195 samples
+Epoch 1/16
+ - 408s - loss: 0.3472 - acc: 0.8533 - val_loss: 0.2375 - val_acc: 0.9012
+Epoch 2/16
+ - 408s - loss: 0.2387 - acc: 0.9061 - val_loss: 0.2062 - val_acc: 0.9181
+Epoch 3/16
+ - 409s - loss: 0.2141 - acc: 0.9168 - val_loss: 0.1937 - val_acc: 0.9234
+Epoch 4/16
+ - 409s - loss: 0.2016 - acc: 0.9225 - val_loss: 0.1932 - val_acc: 0.9233
+Epoch 5/16
+ - 407s - loss: 0.1922 - acc: 0.9265 - val_loss: 0.1775 - val_acc: 0.9301
+Epoch 6/16
+ - 408s - loss: 0.1832 - acc: 0.9303 - val_loss: 0.1729 - val_acc: 0.9318
+Epoch 7/16
+ - 408s - loss: 0.1776 - acc: 0.9324 - val_loss: 0.1704 - val_acc: 0.9330
+Epoch 8/16
+ - 409s - loss: 0.1740 - acc: 0.9337 - val_loss: 0.1695 - val_acc: 0.9346
+Epoch 9/16
+ - 407s - loss: 0.1695 - acc: 0.9355 - val_loss: 0.1666 - val_acc: 0.9341
+Epoch 10/16
+ - 409s - loss: 0.1649 - acc: 0.9373 - val_loss: 0.1658 - val_acc: 0.9361
+Epoch 11/16
+ - 409s - loss: 0.1630 - acc: 0.9392 - val_loss: 0.1648 - val_acc: 0.9351
+Epoch 12/16
+ - 408s - loss: 0.1587 - acc: 0.9404 - val_loss: 0.1625 - val_acc: 0.9371
+Epoch 13/16
+ - 408s - loss: 0.1570 - acc: 0.9409 - val_loss: 0.1673 - val_acc: 0.9350
+Epoch 14/16
+ - 408s - loss: 0.1542 - acc: 0.9416 - val_loss: 0.1658 - val_acc: 0.9356
+Epoch 15/16
+ - 406s - loss: 0.1533 - acc: 0.9424 - val_loss: 0.1742 - val_acc: 0.9361
+Epoch 16/16
+ - 402s - loss: 0.1509 - acc: 0.9432 - val_loss: 0.1587 - val_acc: 0.9387
+
+Test accuracy =  0.9383348810714486
+Test loss =  0.15707371473717932
+example 
+
+sentiment true/predict :  0 [1.]
+Generally the food was very good. But the service just ruined the night for us.  Slow, slow and a bit of slow to go along with that slow on the side.  
+
+When we arrived there wasn't room for 5 of us on the patio.  There was a table of 4 open, and a table for 5 with 2 people at it.  The waitress was of no help.  Left us standing there trying to figure out if we wanted to go inside or not.  So we nicely asked the 2 men if they would move, as their food had not yet arrived.  This was fine with them.  So we settled in and began to discuss the menu and what to do when our 6th friend arrived.  This was about quarter to 8.   We told her we had a 6th coming and she mentioned maybe we better steal a chair from another table while we could.  When my hubbie arrived he perched himself on the window sill temporarily.  She came took his drink order and then returned with his drink without asking him if he might want a chair.  We asked if we could get a chair for him. She looked around and wasn't sure what to suggest.  We asked if we could snag one of the extra chairs from the table for 4 where the 2 men were sitting. She said no that it was reserved for later.   She then offered to look inside for a chair.  Finally problem solved. 
+
+My hubbie asked if there was any non-alcoholic beer. She said she'd check if they had any.  Then came back with an open one.  It happened to be an O'Doul's.  The one my hubbie really doesn't like.  Oh!  Hubbie took a sip and decided he would just suck it up and drink it.  Seemed logical to me to come by and say what they had and check if he wanted it or not.  Not just bring him one.  It really isn't like ordering a coke and getting a pepsi.  And I'msure she would not have done that if someone had asked what they had on tap and she had to check.  
+
+Anyways, I won't bore everyone further with the blow by blow on how it took us until about 9:30 to get our meal.  She didn't come back to see how our meal was, so my bro in law had to walk his steak back into the restaurant because it was blue rare and he had ordered medium. Was quickly fixed, but we not sure why we bothered as the rest of us were done our meals by the time it arrived.  And we were charged for all of it anyways (weren't expecting it free, but a little something to help make us feel our business was worth something).
+
+What was good - my wild mushroom fetticini.  My hubbie's calamari.  The chicken and ribs.
+
+Oh and they don't take interac. 
+
+Interestingly we left to have dessert elsewhere.  We went over to Murrieta's.  Apparently they are owned by the same people. And it was like night and day.  FANTASTIC service and dessert at Murrieta's (will review separately).
+after clean 
+
+generally food good service ruined night us slow slow bit slow go along slow side arrived not room 5 us patio table 4 open table 5 2 people waitress no help left us standing trying figure wanted go inside not nicely asked 2 men would move food not yet arrived fine settled began discuss menu 6th friend arrived quarter 8 told 6th coming mentioned maybe better steal chair another table could hubbie arrived perched window sill temporarily came took drink order returned drink without asking might want chair asked could get chair looked around not sure suggest asked could snag one extra chairs table 4 2 men sitting said no reserved later offered look inside chair finally problem solved hubbie asked non alcoholic beer said would check came back open one happened wouldoul's one hubbie really not like oh hubbie took sip decided would suck drink seemed logical come say check wanted not not bring one really not like ordering coke getting pepsi amsure would not done someone asked tap check anyways not bore everyone blow blow took us 9 30 get meal not come back see meal bro law walk steak back restaurant blue rare ordered medium quickly fixed not sure bothered rest us done meals time arrived charged anyways not expecting free little something help make us feel business worth something good wild mushroom fetticini hubbie's calamari chicken ribs oh not take interac interestingly left dessert elsewhere went murrieta's apparently owned people like night day fantastic service dessert murrieta's review separately
+example 
+
+sentiment true/predict :  0 [1.]
+En général quand j'entends parler de marché je me dis cool
+je vais voir des fruits, des légumes et pleins de produit locauxEn plus de
+cela quand j'ai vu la façade du bâtiment je me suis dis ce Marché est vraiment
+magnifique (refait à neuf on dirait) et lorsque l'on rentre c'est la déception. En effet il n'y a à l'intérieur aucun marché mais plus des
+boutiques type souvenir ou autres. C'était je pense un marché dans le temps
+mais c'est maintenant plus un lieu touristique qui selon moi n'a d'intérêt que
+l'extérieur. Et oui comme il y a plein de boutique tout est fractionné à
+l'intérieur et on perd la beauté des voutes et tout : c'est presque trop
+moderne à l'intérieur. Bon il faut
+relativiser car le bâtiment est tout de même sympa et c'est un lieu à voir car
+mythique dans le passé. En plus de cela il y une salle d'exposition au sous sol
+donc il y a de quoi voir mais ca ne sert a rien d'apporter de sac de course.
+after clean 
+
+en g n ral quand j'entends parler de march je dis cool je vais voir des fruits des l gumes et pleins de produit locauxen plus de cela quand j'ai vu la fa ade du b timent je suis dis ce march est vraiment magnifique refait neuf dirait et lorsque l'on rentre c'est la ception en effet il n'y l'int rieur aucun march mais plus des boutiques type souvenir ou autres c' tait je pense un march dans le temps mais c'est maintenant plus un lieu touristique qui selon moi n'a d'int r que l'ext rieur et oui comme il plein de boutique tout est fractionn l'int rieur et perd la beaut des voutes et tout c'est presque trop moderne l'int rieur bon il faut relativiser car le b timent est tout de sympa et c'est un lieu voir car mythique dans le pass en plus de cela il une salle d'exposition au sous sol donc il de quoi voir mais ca ne sert rien d'apporter de sac de course
+example 
+
+sentiment true/predict :  0 [1.]
+Be sure to schedule your appointments an hour ahead of when you need to see the doctor. Have been here multiple times and always end up waiting 30min-an hour!
+Otherwise the doctor and staff are good.
+after clean 
+
+sure schedule appointments hour ahead need see doctor multiple times always end waiting 30min hour otherwise doctor staff good
+example 
+
+sentiment true/predict :  1 [0.]
+Two words: CHICHARRON EMPANADAS
+
+Your'e welcome. I would drive here again (it is really out of my way) just for those. And they weren't even on the menu. The nice woman in the kitchen overheard what I wanted to order and she totally made them as a special order!! I will be back!
+after clean 
+
+two words chicharron empanadas your'e welcome would drive really way not even menu nice woman kitchen overheard wanted order totally made special order back
+example 
+
+sentiment true/predict :  0 [1.]
+Good bargain, yes. But as a family restaurant, this place could be a bit cleaner. I was embarrassed that my kid had to see the restrooms the way they were kept. There were plenty of kids around. They should take some time to remove all the grafitti in the restrooms. As far as the food, it was better than expected. As i read the other reviews, i was expecting much less. If the restrooms were kept clean i would have given them 4 stars.
+after clean 
+
+good bargain yes family restaurant place could bit cleaner embarrassed kid see restrooms way kept plenty kids around take time remove grafitti restrooms far food better expected read reviews expecting much less restrooms kept clean would given 4 stars
+example 
+
+sentiment true/predict :  0 [1.]
+Tried to eat at the Macaroni Grill on N Stephanie and found a live roach in my salad. I recommend not to eat there. I had the bread and threw that up.
+after clean 
+
+tried eat macaroni grill n stephanie found live roach salad recommend not eat bread threw
+example 
+
+sentiment true/predict :  1 [0.]
+This is the place for steaks!  they know their stuff.  It is ridiculous expensive - $60 for a petite filet, without sides.  But it was delicious!  Don't miss the cheese puff pastry that they bring to start and the pretzel bread with appetizers was out of control tasty./home/phoenix/miniconda3/envs/gpu/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Using TensorFlow backend.
+
+after clean 
+
+place steaks know stuff ridiculous expensive 60 petite filet without sides delicious not miss cheese puff pastry bring start pretzel bread appetizers control tasty
+example 
+
+sentiment true/predict :  0 [1.]
+i went there on Friday morning around 1 am. ordered the root beer float and the blossom onion burger the wife ordered the burger. everything was going well until the food poisoning a couple of hours later. thanks pbr for having me miss my brothers wedding and enjoying my trip.
+after clean 
+
+went friday morning around 1 ordered root beer float blossom onion burger wife ordered burger everything going well food poisoning couple hours later thanks pbr miss brothers wedding enjoying trip
+example 
+
+sentiment true/predict :  0 [1.]
+Though I requested that no mercury amalgam be used, Dr. John Busby of Affiliated Dentists placed toxic mercury amalgam under a capped tooth which was an anchor for a bridge. He claimed that it had no mercury. For years after the installation of the bridge and mercury filling my health deteriorated, yet I could not track down the cause until a holistic health practitioner suggested that there may be mercury under the capped tooth ( Mercury is one of the most potent neurotoxins of all the heavy metals and an immunosuppressant.).  I had the bridge removed and a large mercury filling was found.  The biological dentist commented that the surrounding gum tissue had a prominent "mercury tattoo" caused from the mercury leaching into the gum. He also stated that the bridge was of inferior quality ( high nickel content and cheap materials) and had been forced into position, causing it to press into the gum. Upon removal of the bridge, an ulcerated, bleeding area of gum was uncovered. It was the source of discomfort and bleeding I had endured for years ( and non-biological dentists had discounted). A visit to a toxocologist revealed that I had very high levels of forms of mercury used in dental amalgam, as well as nickel. Within a few weeks of the removal of the bridge and amalgam my migraines decreased by 80% and neck pain, lymphatic swelling and fatigue began to reduce. 
+
+          When I went to Dr. Busby's office and requested my patient records, I was told that they had  been "shredded." I asked to speak with Busby as I had questions about the materials he had placed in my mouth. I was denied an opportunity to address my questions to him. 
+
+          I encourage people to do their own research. I have found many journal articles linking breast and prostate cancer to mercury and nickel. The metals leach into the tissues of the mouth and then get into the lymphatic tissue of the neck and eventually to the breast ( which is highly lymphatic).. Beware of fluoride, as well--- Dr. Busby's office was promoting products with fluoride in them ( even for children) when I visited it to retrieve my records.
+
+       See mercury "smoking from a tooth" at  https://www.youtube.com /watch?v=9ylnQ-T7oiA
+after clean 
+
+though requested no mercury amalgam used dr john busby affiliated dentists placed toxic mercury amalgam capped tooth anchor bridge claimed no mercury years installation bridge mercury filling health deteriorated yet could not track holistic health practitioner suggested may mercury capped tooth mercury one potent neurotoxins heavy metals immunosuppressant bridge removed large mercury filling found biological dentist commented surrounding gum tissue prominent mercury tattoo caused mercury leaching gum also stated bridge inferior quality high nickel content cheap materials forced position causing press gum upon removal bridge ulcerated bleeding area gum uncovered source discomfort bleeding endured years non biological dentists discounted visit toxocologist revealed high levels forms mercury used dental amalgam well nickel within weeks removal bridge amalgam migraines decreased 80 neck pain lymphatic swelling fatigue began reduce went dr busby's office requested patient records told shredded asked speak busby questions materials placed mouth denied opportunity address questions encourage people research found many journal articles linking breast prostate cancer mercury nickel metals leach tissues mouth get lymphatic tissue neck eventually breast highly lymphatic beware fluoride well dr busby's office promoting products fluoride even children visited retrieve records see mercury smoking tooth https www youtube com watch v 9ylnq t7oia
+example 
+
+sentiment true/predict :  0 [1.]
+Miniature golf course very blah, would not come back.  Go to the place over by Metro Center, much more fun and just a little farther.
+after clean 
+
+miniature golf course blah would not come back go place metro center much fun little farther
+plot training loss
+Saved model to disk
