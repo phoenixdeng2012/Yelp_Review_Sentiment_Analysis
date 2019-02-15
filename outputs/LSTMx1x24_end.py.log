@@ -1,0 +1,160 @@
+2019-02-11 11:32:28.022789: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2019-02-11 11:32:28.796267: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1405] Found device 0 with properties: 
+name: GeForce GTX 980 Ti major: 5 minor: 2 memoryClockRate(GHz): 1.19
+pciBusID: 0000:01:00.0
+totalMemory: 5.94GiB freeMemory: 2.06GiB
+2019-02-11 11:32:28.796302: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2019-02-11 11:32:29.054258: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-02-11 11:32:29.054296: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2019-02-11 11:32:29.054303: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2019-02-11 11:32:29.054440: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 1748 MB memory) -> physical GPU (device: 0, name: GeForce GTX 980 Ti, pci bus id: 0000:01:00.0, compute capability: 5.2)
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_1 (InputLayer)         (None, 60)                0         
+_________________________________________________________________
+embedding_1 (Embedding)      (None, 60, 50)            20000050  
+_________________________________________________________________
+lstm_1 (LSTM)                (None, 24)                7200      
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 24)                0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 1)                 25        
+_________________________________________________________________
+activation_1 (Activation)    (None, 1)                 0         
+=================================================================
+Total params: 20,007,275
+Trainable params: 7,225
+Non-trainable params: 20,000,050
+_________________________________________________________________
+(223982, 60)
+Train on 156787 samples, validate on 67195 samples
+Epoch 1/16
+ - 409s - loss: 0.3389 - acc: 0.8551 - val_loss: 0.2510 - val_acc: 0.8959
+Epoch 2/16
+ - 405s - loss: 0.2357 - acc: 0.9075 - val_loss: 0.2084 - val_acc: 0.9161
+Epoch 3/16
+ - 402s - loss: 0.2131 - acc: 0.9173 - val_loss: 0.1935 - val_acc: 0.9219
+Epoch 4/16
+ - 400s - loss: 0.2012 - acc: 0.9225 - val_loss: 0.1946 - val_acc: 0.9251
+Epoch 5/16
+ - 400s - loss: 0.1904 - acc: 0.9265 - val_loss: 0.1768 - val_acc: 0.9297
+Epoch 6/16
+ - 399s - loss: 0.1836 - acc: 0.9299 - val_loss: 0.1808 - val_acc: 0.9286
+Epoch 7/16
+ - 401s - loss: 0.1785 - acc: 0.9320 - val_loss: 0.1706 - val_acc: 0.9329
+Epoch 8/16
+ - 400s - loss: 0.1729 - acc: 0.9345 - val_loss: 0.1678 - val_acc: 0.9349
+Epoch 9/16
+ - 400s - loss: 0.1695 - acc: 0.9358 - val_loss: 0.1663 - val_acc: 0.9352
+Epoch 10/16
+ - 399s - loss: 0.1653 - acc: 0.9372 - val_loss: 0.1725 - val_acc: 0.9329
+Epoch 11/16
+ - 400s - loss: 0.1633 - acc: 0.9375 - val_loss: 0.1649 - val_acc: 0.9356
+Epoch 12/16
+ - 400s - loss: 0.1598 - acc: 0.9397 - val_loss: 0.1741 - val_acc: 0.9347
+Epoch 13/16
+ - 399s - loss: 0.1568 - acc: 0.9405 - val_loss: 0.1604 - val_acc: 0.9378
+Epoch 14/16
+ - 399s - loss: 0.1539 - acc: 0.9422 - val_loss: 0.1746 - val_acc: 0.9329
+Epoch 15/16
+ - 399s - loss: 0.1531 - acc: 0.9424 - val_loss: 0.1659 - val_acc: 0.9382
+Epoch 16/16
+ - 400s - loss: 0.1514 - acc: 0.9425 - val_loss: 0.1627 - val_acc: 0.9366
+
+Test accuracy =  0.9373883848931501
+Test loss =  0.16167679671428317
+example 
+
+sentiment true/predict :  0 [1.]
+Generally the food was very good. But the service just ruined the night for us.  Slow, slow and a bit of slow to go along with that slow on the side.  
+
+When we arrived there wasn't room for 5 of us on the patio.  There was a table of 4 open, and a table for 5 with 2 people at it.  The waitress was of no help.  Left us standing there trying to figure out if we wanted to go inside or not.  So we nicely asked the 2 men if they would move, as their food had not yet arrived.  This was fine with them.  So we settled in and began to discuss the menu and what to do when our 6th friend arrived.  This was about quarter to 8.   We told her we had a 6th coming and she mentioned maybe we better steal a chair from another table while we could.  When my hubbie arrived he perched himself on the window sill temporarily.  She came took his drink order and then returned with his drink without asking him if he might want a chair.  We asked if we could get a chair for him. She looked around and wasn't sure what to suggest.  We asked if we could snag one of the extra chairs from the table for 4 where the 2 men were sitting. She said no that it was reserved for later.   She then offered to look inside for a chair.  Finally problem solved. 
+
+My hubbie asked if there was any non-alcoholic beer. She said she'd check if they had any.  Then came back with an open one.  It happened to be an O'Doul's.  The one my hubbie really doesn't like.  Oh!  Hubbie took a sip and decided he would just suck it up and drink it.  Seemed logical to me to come by and say what they had and check if he wanted it or not.  Not just bring him one.  It really isn't like ordering a coke and getting a pepsi.  And I'msure she would not have done that if someone had asked what they had on tap and she had to check.  
+
+Anyways, I won't bore everyone further with the blow by blow on how it took us until about 9:30 to get our meal.  She didn't come back to see how our meal was, so my bro in law had to walk his steak back into the restaurant because it was blue rare and he had ordered medium. Was quickly fixed, but we not sure why we bothered as the rest of us were done our meals by the time it arrived.  And we were charged for all of it anyways (weren't expecting it free, but a little something to help make us feel our business was worth something).
+
+What was good - my wild mushroom fetticini.  My hubbie's calamari.  The chicken and ribs.
+
+Oh and they don't take interac. 
+
+Interestingly we left to have dessert elsewhere.  We went over to Murrieta's.  Apparently they are owned by the same people. And it was like night and day.  FANTASTIC service and dessert at Murrieta's (will review separately).
+after clean 
+
+generally food good service ruined night us slow slow bit slow go along slow side arrived not room 5 us patio table 4 open table 5 2 people waitress no help left us standing trying figure wanted go inside not nicely asked 2 men would move food not yet arrived fine settled began discuss menu 6th friend arrived quarter 8 told 6th coming mentioned maybe better steal chair another table could hubbie arrived perched window sill temporarily came took drink order returned drink without asking might want chair asked could get chair looked around not sure suggest asked could snag one extra chairs table 4 2 men sitting said no reserved later offered look inside chair finally problem solved hubbie asked non alcoholic beer said would check came back open one happened wouldoul's one hubbie really not like oh hubbie took sip decided would suck drink seemed logical come say check wanted not not bring one really not like ordering coke getting pepsi amsure would not done someone asked tap check anyways not bore everyone blow blow took us 9 30 get meal not come back see meal bro law walk steak back restaurant blue rare ordered medium quickly fixed not sure bothered rest us done meals time arrived charged anyways not expecting free little something help make us feel business worth something good wild mushroom fetticini hubbie's calamari chicken ribs oh not take interac interestingly left dessert elsewhere went murrieta's apparently owned people like night day fantastic service dessert murrieta's review separately
+example 
+
+sentiment true/predict :  0 [1.]
+George Brazil/Mike Diamond was a total rip off!  My air conditioner was not working correctly and I called them, when they got here they looked around then determined that I had 3 options the cheapest being $560 and the most $8,000.  They said that I needed a new air conditioner because they could not figure out what was wrong with mine.  The next day I was talking to a friend and she said her husband could come over and look at it, well lo and behold he fixed it and for free and no parts needed!!!! So all they really cared about was selling us an conditioner, they basically made a service call in to a hard sell call.  They did offer me a refund after I wrote a complaint.
+after clean 
+
+george brazil mike diamond total rip air conditioner not working correctly called got looked around determined 3 options cheapest 560 8 000 said needed new air conditioner could not figure wrong mine next day talking friend said husband could come look well lo behold fixed free no parts needed really cared selling us conditioner basically made service call hard sell call offer refund wrote complaint
+example 
+
+sentiment true/predict :  1 [0.]
+Two words: CHICHARRON EMPANADAS
+
+Your'e welcome. I would drive here again (it is really out of my way) just for those. And they weren't even on the menu. The nice woman in the kitchen overheard what I wanted to order and she totally made them as a special order!! I will be back!
+after clean 
+
+two words chicharron empanadas your'e welcome would drive really way not even menu nice woman kitchen overheard wanted order totally made special order back
+example 
+
+sentiment true/predict :  0 [1.]
+Good bargain, yes. But as a family restaurant, this place could be a bit cleaner. I was embarrassed that my kid had to see the restrooms the way they were kept. There were plenty of kids around. They should take some time to remove all the grafitti in the restrooms. As far as the food, it was better than expected. As i read the other reviews, i was expecting much less. If the restrooms were kept clean i would have given them 4 stars.
+after clean 
+
+good bargain yes family restaurant place could bit cleaner embarrassed kid see restrooms way kept plenty kids around take time remove grafitti restrooms far food better expected read reviews expecting much less restrooms kept clean would given 4 stars
+example 
+
+sentiment true/predict :  0 [1.]
+Je n'ai pas été séduit par cet endroit. 
+Il y a peu de choix à la carte, le café est vraiment très corsé et les serveurs et serveuses pourraient être plus chaleureux, les horaires d'ouverture sont limités et la cuisine ferme tôt.
+Conforme à sa façade "alternative" et suivant un pseudo-militantisme intéressé, la maison n'accepte que l'argent liquide comme moyen de paiement. Ceci oblige donc le gentil client à retirer l'argent au distributeur d'à côté... en payant les frais bancaires lui-même. En l'occurrence, 2$ par retrait, soit quasiment le prix du café. 
+Sinon, Internet est assez rapide (ce qui vaut la deuxième étoile).
+after clean 
+
+je n'ai pas duit par cet endroit il peu de choix la carte le caf est vraiment tr cors et les serveurs et serveuses pourraient tre plus chaleureux les horaires d'ouverture sont limit et la cuisine ferme conforme sa fa ade alternative et suivant un pseudo militantisme int ress la maison n'accepte que l'argent liquide comme moyen de paiement ceci oblige donc le gentil client retirer l'argent au distributeur d' c en payant les frais bancaires lui en l'occurrence 2 par retrait soit quasiment le prix du caf sinon internet est assez rapide ce qui vaut la deuxi toile
+example 
+
+sentiment true/predict :  1 [0.]
+Fat burger is hands down the best fast food burger I have ever eaten.  The quality of beef paired with the perfect combination of condiments makes fat burger a necessity on every Vegas trip.  I suggest at least a double burger with cheese, bacon, and a fried egg.  It's my belief that lettuce has no business on a burger but get it with everything else.  If you follow these instructions and are disappointed you may want to set yourself an appointment with a psychiatrist you just might be crazy./home/phoenix/miniconda3/envs/gpu/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Using TensorFlow backend.
+
+after clean 
+
+fat burger hands best fast food burger ever eaten quality beef paired perfect combination condiments makes fat burger necessity every vegas trip suggest least double burger cheese bacon fried egg belief lettuce no business burger get everything else follow instructions disappointed may want set appointment psychiatrist might crazy
+example 
+
+sentiment true/predict :  1 [0.]
+This is the place for steaks!  they know their stuff.  It is ridiculous expensive - $60 for a petite filet, without sides.  But it was delicious!  Don't miss the cheese puff pastry that they bring to start and the pretzel bread with appetizers was out of control tasty.
+after clean 
+
+place steaks know stuff ridiculous expensive 60 petite filet without sides delicious not miss cheese puff pastry bring start pretzel bread appetizers control tasty
+example 
+
+sentiment true/predict :  0 [1.]
+i went there on Friday morning around 1 am. ordered the root beer float and the blossom onion burger the wife ordered the burger. everything was going well until the food poisoning a couple of hours later. thanks pbr for having me miss my brothers wedding and enjoying my trip.
+after clean 
+
+went friday morning around 1 ordered root beer float blossom onion burger wife ordered burger everything going well food poisoning couple hours later thanks pbr miss brothers wedding enjoying trip
+example 
+
+sentiment true/predict :  0 [1.]
+Not what Mitchell's used to be. There was a hair in my food and the bathrooms were less than clean. For a $70 bill for each of us (once my Salmon was taken off), far from worth it.
+
+I would love for them to be what they used to be.
+after clean 
+
+not mitchell's used hair food bathrooms less clean 70 bill us salmon taken far worth would love used
+example 
+
+sentiment true/predict :  0 [1.]
+Far from authentic Mexican food. Lack of flavor in the asada and Pico de gallo was real disappointing considering the 4.5 star rating. Chips were fresh but so are bagged chips....Dios mio!
+after clean 
+
+far authentic mexican food lack flavor asada pico de gallo real disappointing considering 4 5 star rating chips fresh bagged chips dios mio
+plot training loss
+Saved model to disk
