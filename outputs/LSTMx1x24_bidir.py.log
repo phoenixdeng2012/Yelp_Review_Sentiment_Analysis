@@ -1,0 +1,168 @@
+2019-02-10 18:40:54.079938: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2019-02-10 18:40:55.594129: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1405] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:02:00.0
+totalMemory: 10.92GiB freeMemory: 10.76GiB
+2019-02-10 18:40:55.594158: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2019-02-10 18:41:00.090522: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-02-10 18:41:00.090590: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2019-02-10 18:41:00.090606: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2019-02-10 18:41:00.093917: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10405 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:02:00.0, compute capability: 6.1)
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_1 (InputLayer)         (None, 60)                0         
+_________________________________________________________________
+embedding_1 (Embedding)      (None, 60, 50)            20000050  
+_________________________________________________________________
+bidirectional_1 (Bidirection (None, 48)                14400     
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 48)                0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 1)                 49        
+_________________________________________________________________
+activation_1 (Activation)    (None, 1)                 0         
+=================================================================
+Total params: 20,014,499
+Trainable params: 14,449
+Non-trainable params: 20,000,050
+_________________________________________________________________
+(223982, 60)
+Train on 156787 samples, validate on 67195 samples
+Epoch 1/16
+ - 659s - loss: 0.2979 - acc: 0.8757 - val_loss: 0.2348 - val_acc: 0.9068
+Epoch 2/16
+ - 639s - loss: 0.2169 - acc: 0.9142 - val_loss: 0.1952 - val_acc: 0.9217
+Epoch 3/16
+ - 639s - loss: 0.1962 - acc: 0.9227 - val_loss: 0.1806 - val_acc: 0.9284
+Epoch 4/16
+ - 640s - loss: 0.1840 - acc: 0.9283 - val_loss: 0.1732 - val_acc: 0.9314
+Epoch 5/16
+ - 638s - loss: 0.1747 - acc: 0.9321 - val_loss: 0.1692 - val_acc: 0.9327
+Epoch 6/16
+ - 639s - loss: 0.1677 - acc: 0.9351 - val_loss: 0.1784 - val_acc: 0.9285
+Epoch 7/16
+ - 639s - loss: 0.1608 - acc: 0.9381 - val_loss: 0.1828 - val_acc: 0.9300
+Epoch 8/16
+ - 639s - loss: 0.1556 - acc: 0.9398 - val_loss: 0.1603 - val_acc: 0.9356
+Epoch 9/16
+ - 643s - loss: 0.1511 - acc: 0.9415 - val_loss: 0.1630 - val_acc: 0.9376
+Epoch 10/16
+ - 639s - loss: 0.1467 - acc: 0.9438 - val_loss: 0.1633 - val_acc: 0.9371
+Epoch 11/16
+ - 639s - loss: 0.1430 - acc: 0.9449 - val_loss: 0.1691 - val_acc: 0.9340
+Epoch 12/16
+ - 644s - loss: 0.1399 - acc: 0.9463 - val_loss: 0.1534 - val_acc: 0.9401
+Epoch 13/16
+ - 645s - loss: 0.1365 - acc: 0.9477 - val_loss: 0.1532 - val_acc: 0.9404
+Epoch 14/16
+ - 645s - loss: 0.1335 - acc: 0.9490 - val_loss: 0.1552 - val_acc: 0.9395
+Epoch 15/16
+ - 644s - loss: 0.1309 - acc: 0.9504 - val_loss: 0.1543 - val_acc: 0.9401
+Epoch 16/16
+ - 645s - loss: 0.1283 - acc: 0.9517 - val_loss: 0.1589 - val_acc: 0.9406
+
+Test accuracy =  0.9409600685763269
+Test loss =  0.15942492396481928
+example 
+
+sentiment true/predict :  0 [1.]
+Generally the food was very good. But the service just ruined the night for us.  Slow, slow and a bit of slow to go along with that slow on the side.  
+
+When we arrived there wasn't room for 5 of us on the patio.  There was a table of 4 open, and a table for 5 with 2 people at it.  The waitress was of no help.  Left us standing there trying to figure out if we wanted to go inside or not.  So we nicely asked the 2 men if they would move, as their food had not yet arrived.  This was fine with them.  So we settled in and began to discuss the menu and what to do when our 6th friend arrived.  This was about quarter to 8.   We told her we had a 6th coming and she mentioned maybe we better steal a chair from another table while we could.  When my hubbie arrived he perched himself on the window sill temporarily.  She came took his drink order and then returned with his drink without asking him if he might want a chair.  We asked if we could get a chair for him. She looked around and wasn't sure what to suggest.  We asked if we could snag one of the extra chairs from the table for 4 where the 2 men were sitting. She said no that it was reserved for later.   She then offered to look inside for a chair.  Finally problem solved. 
+
+My hubbie asked if there was any non-alcoholic beer. She said she'd check if they had any.  Then came back with an open one.  It happened to be an O'Doul's.  The one my hubbie really doesn't like.  Oh!  Hubbie took a sip and decided he would just suck it up and drink it.  Seemed logical to me to come by and say what they had and check if he wanted it or not.  Not just bring him one.  It really isn't like ordering a coke and getting a pepsi.  And I'msure she would not have done that if someone had asked what they had on tap and she had to check.  
+
+Anyways, I won't bore everyone further with the blow by blow on how it took us until about 9:30 to get our meal.  She didn't come back to see how our meal was, so my bro in law had to walk his steak back into the restaurant because it was blue rare and he had ordered medium. Was quickly fixed, but we not sure why we bothered as the rest of us were done our meals by the time it arrived.  And we were charged for all of it anyways (weren't expecting it free, but a little something to help make us feel our business was worth something).
+
+What was good - my wild mushroom fetticini.  My hubbie's calamari.  The chicken and ribs.
+
+Oh and they don't take interac. 
+
+Interestingly we left to have dessert elsewhere.  We went over to Murrieta's.  Apparently they are owned by the same people. And it was like night and day.  FANTASTIC service and dessert at Murrieta's (will review separately).
+after clean 
+
+generally food good service ruined night us slow slow bit slow go along slow side arrived not room 5 us patio table 4 open table 5 2 people waitress no help left us standing trying figure wanted go inside not nicely asked 2 men would move food not yet arrived fine settled began discuss menu 6th friend arrived quarter 8 told 6th coming mentioned maybe better steal chair another table could hubbie arrived perched window sill temporarily came took drink order returned drink without asking might want chair asked could get chair looked around not sure suggest asked could snag one extra chairs table 4 2 men sitting said no reserved later offered look inside chair finally problem solved hubbie asked non alcoholic beer said would check came back open one happened wouldoul's one hubbie really not like oh hubbie took sip decided would suck drink seemed logical come say check wanted not not bring one really not like ordering coke getting pepsi amsure would not done someone asked tap check anyways not bore everyone blow blow took us 9 30 get meal not come back see meal bro law walk steak back restaurant blue rare ordered medium quickly fixed not sure bothered rest us done meals time arrived charged anyways not expecting free little something help make us feel business worth something good wild mushroom fetticini hubbie's calamari chicken ribs oh not take interac interestingly left dessert elsewhere went murrieta's apparently owned people like night day fantastic service dessert murrieta's review separately
+example 
+
+sentiment true/predict :  0 [1.]
+They have a website and a menu as well, kudos! Prices? NO? Duh?
+after clean 
+
+website menu well kudos prices no duh
+example 
+
+sentiment true/predict :  0 [1.]
+Good bargain, yes. But as a family restaurant, this place could be a bit cleaner. I was embarrassed that my kid had to see the restrooms the way they were kept. There were plenty of kids around. They should take some time to remove all the grafitti in the restrooms. As far as the food, it was better than expected. As i read the other reviews, i was expecting much less. If the restrooms were kept clean i would have given them 4 stars.
+after clean 
+
+good bargain yes family restaurant place could bit cleaner embarrassed kid see restrooms way kept plenty kids around take time remove grafitti restrooms far food better expected read reviews expecting much less restrooms kept clean would given 4 stars
+example 
+
+sentiment true/predict :  0 [1.]
+Mike glover was a great salesman, with that said everyone else there is terrible. The "Manager" has anger issues and has no problem yelling at you and seems to enjoy confrontation. The "finance guy" has no idea what is going on and struggled with the simplest questions, and was not sure how to do his job. If purchasing a used car make sure they let you take it to a mechanic because they leave many issues hidden and hope for the best that you don't find them. 
+
+The only reason that i am giving them two stars is because of Mike, he alone deserves five stars.
+after clean 
+
+mike glover great salesman said everyone else terrible manager anger issues no problem yelling seems enjoy confrontation finance guy no idea going struggled simplest questions not sure job purchasing used car make sure let take mechanic leave many issues hidden hope best not find reason giving two stars mike alone deserves five stars
+example 
+
+sentiment true/predict :  1 [0.]
+Fat burger is hands down the best fast food burger I have ever eaten.  The quality of beef paired with the perfect combination of condiments makes fat burger a necessity on every Vegas trip.  I suggest at least a double burger with cheese, bacon, and a fried egg.  It's my belief that lettuce has no business on a burger but get it with everything else.  If you follow these instructions and are disappointed you may want to set yourself an appointment with a psychiatrist you just might be crazy.
+after clean 
+
+fat burger hands best fast food burger ever eaten quality beef paired perfect combination condiments makes fat burger necessity every vegas trip suggest least double burger cheese bacon fried egg belief lettuce no business burger get everything else follow instructions disappointed may want set appointment psychiatrist might crazy
+example 
+
+sentiment true/predict :  1 [0.]
+This is the place for steaks!  they know their stuff.  It is ridiculous expensive - $60 for a petite filet, without sides.  But it was delicious!  Don't miss the cheese puff pastry that they bring to start and the pretzel bread with appetizers was out of control tasty.
+after clean 
+
+place steaks know stuff ridiculous expensive 60 petite filet without sides delicious not miss cheese puff pastry bring start pretzel bread appetizers control tasty
+example 
+
+sentiment true/predict :  1 [0.]
+New neighbors of indeterminate origin recently moved in next door, and such luxuriously mouthwatering, deeply rich cooking smells issue forth from under their door every eve that I dream of befriending them so that at some point they will invite me over for a homecooked meal, slapping me on the back with gaiety and smiling benevolently as I exclaim with a shimmer of tears in my eyes, that I've never had anything as delicious as what they've cooked in the comfort of their home, just for me.
+
+Well, that will probably never happen because in my apartment complex no one ever acknowledges the existence of another unless there is a Problem.  However, this past Friday I got a scrumptious taste of what that reverie would feel like if made tangible at the Peruvian restaurant Pucapuca.  The square, austere dining salon at that time was relatively empty but immediately the owner (also waiter, maitre d' and cook...in fact I'm pretty sure he was the only one in the whole establishment) filled the place up with his warmth and kindly smiling eyes, immediately making us feel like his favored grandchirren.  When he described the prix-fixe menu though, we just about fell out of our seats: 15 CAD for a starter, entree, hot drink and dessert?? On a Friday night in Mile End in Montreal?? We quickly composed ourselves and took to scrutinizing the menu- for entrees, among us four we got dishes of quail, smothered pork chops, spicy beef stew, and stewed chicken in peanut sauce.  The salads and soups we ordered as starters were satisfying, homey and flavorful.  But the entrees.....! Tabarnak! Each plate came heaving with a non-fussy array of food, a scoop of stewed root veggies, a hill of aromatic rice, a mess of peas, and then the meat front and center.  Our table devolved into a chaotic tangle of forks and knives as we dived into our own and each others' dishes...every one was sublime.  The pork chop, smothered in a tomato and beer sauce, was especially wonderful; the best pork dish I've ever tasted in a restaurant.  Even though we were at breaking point after the dinner, we all wedged in a small slice of cake for dessert.
+
+All this, handled with genuine familial feeling from the delightful owner/chef/waiter... it was quite the dining experience.  I'm sad that my return trips back there will be broken up by months of time. If you live in or visit Montreal, you MUST go here!/home/phoenix/miniconda3/envs/gpu/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Using TensorFlow backend.
+
+after clean 
+
+new neighbors indeterminate origin recently moved next door luxuriously mouthwatering deeply rich cooking smells issue forth door every eve dream befriending point invite homecooked meal slapping back gaiety smiling benevolently exclaim shimmer tears eyes never anything delicious cooked comfort home well probably never happen apartment complex no one ever acknowledges existence another unless problem however past friday got scrumptious taste reverie would feel like made tangible peruvian restaurant pucapuca square austere dining salon time relatively empty immediately owner also waiter maitre d' cook fact pretty sure one whole establishment filled place warmth kindly smiling eyes immediately making us feel like favored grandchirren described prix fixe menu though fell seats 15 cad starter entree hot drink dessert friday night mile end montreal quickly composed took scrutinizing menu entrees among us four got dishes quail smothered pork chops spicy beef stew stewed chicken peanut sauce salads soups ordered starters satisfying homey flavorful entrees tabarnak plate came heaving non fussy array food scoop stewed root veggies hill aromatic rice mess peas meat front center table devolved chaotic tangle forks knives dived others' dishes every one sublime pork chop smothered tomato beer sauce especially wonderful best pork dish ever tasted restaurant even though breaking point dinner wedged small slice cake dessert handled genuine familial feeling delightful owner chef waiter quite dining experience sad return trips back broken months time live visit montreal must go
+example 
+
+sentiment true/predict :  0 [1.]
+i went there on Friday morning around 1 am. ordered the root beer float and the blossom onion burger the wife ordered the burger. everything was going well until the food poisoning a couple of hours later. thanks pbr for having me miss my brothers wedding and enjoying my trip.
+after clean 
+
+went friday morning around 1 ordered root beer float blossom onion burger wife ordered burger everything going well food poisoning couple hours later thanks pbr miss brothers wedding enjoying trip
+example 
+
+sentiment true/predict :  0 [1.]
+Not what Mitchell's used to be. There was a hair in my food and the bathrooms were less than clean. For a $70 bill for each of us (once my Salmon was taken off), far from worth it.
+
+I would love for them to be what they used to be.
+after clean 
+
+not mitchell's used hair food bathrooms less clean 70 bill us salmon taken far worth would love used
+example 
+
+sentiment true/predict :  0 [1.]
+NEVER AGAIN! (at least not for me...this is a hotel for a different crowd)
+For me, the best part about this hotel was that happy hour, which lasts until 8 serves $5 glasses of decent wine.  But you can get that without having to stay here overnight.
+
+I arrived to work being done on the outside of the hotel - apparently some rain damaged the drywall (huh?) so had to drive around the side to park, where there is nobody to direct you to where the front desk is, or heaven forbid be there to help you haul your bags up a flight of stairs.  Later I learned that the elevator down there wasn't just for parking - it could have taken me to the lobby, so again it would've been nice if there was sombody down there to let a newcomer know what is where.  Not much in the way of hospitality - but then again, this is a glorified Holiday Inn.
+
+The lobby is okay in that it's very bright, clean and somewhat hip.  The bar is off to the side where there is also a nice outdoor lounge.  Like other Yelpers, I was a little confused by the two computers in the bar acting as the business center, but whatever.
+
+My room was pretty nice.  I liked the retro, mid century look and feel.  This hotel's big selling point was the hard wood floors but in my opinion, the floors were a HUGE mistake.  Firstly, they are cheap laminate, not hard wood and anybody can tell.  But worst of all, the floors make sound travel from room to room!  I was able to hear everything next to me and above me.  And on this random Wednesday night, my floor and the floor above me was an all night party - I mean college kids running up and down the halls like crazy people, doors slamming (and I mean SLAMMING) and what sounded like a game of marbles above my head  This went on until 4 in the morning..  I think that the low price point and hipsterish feel here makes it the perfect place for a twentysomething crowd, but not a business traveler like me.  Free internet and parking does not make up for the circles under my eyes.  So bottom line is, if I were 22 and partying with my friends, this would be a fantastic hotel.  For work or a romantic weekend in Scottsale, notsomuch.
+after clean 
+
+never least not hotel different crowd best part hotel happy hour lasts 8 serves 5 glasses decent wine get without stay overnight arrived work done outside hotel apparently rain damaged drywall huh drive around side park nobody direct front desk heaven forbid help haul bags flight stairs later learned elevator not parking could taken lobby would nice sombody let newcomer know not much way hospitality glorified holiday inn lobby okay bright clean somewhat hip bar side also nice outdoor lounge like yelpers little confused two computers bar acting business center whatever room pretty nice liked retro mid century look feel hotel's big selling point hard wood floors opinion floors huge mistake firstly cheap laminate not hard wood anybody tell worst floors make sound travel room room able hear everything next random wednesday night floor floor night party mean college kids running halls like crazy people doors slamming mean slamming sounded like game marbles head went 4 morning think low price point hipsterish feel makes perfect place twentysomething crowd not business traveler like free internet parking not make circles eyes bottom line 22 partying friends would fantastic hotel work romantic weekend scottsale notsomuch
+plot training loss
+Saved model to disk

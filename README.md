@@ -18,5 +18,6 @@ The best model got 93.8% accuracy on test data set.
 Details see report
 
 Report
+(https://github.com/phoenixdeng2012/Yelp_Review_Sentiment_Analysis/blob/master/Report.pdf)
 
  
