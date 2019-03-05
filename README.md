@@ -14,7 +14,7 @@ Exploratory data analysis: (https://github.com/phoenixdeng2012/Yelp_Review_Senti
 
 Model tuning: 
 Models are kept in .py in models folder. The logs from each model are kept in outputs folder.
-The best model got 93.8% accuracy on test data set.
+The best model got 94% accuracy on test data set.
 Details see report
 
 Report
